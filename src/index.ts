@@ -1,21 +1,31 @@
 const alphabet = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz';
 
-function letterPosition(char: string, letters: string) {
+function letterPosition(char: string, letters: string): number {
     return letters.indexOf(char.toLowerCase());
 }
 
 export function createSecret() {}
 
-export function encrypt(char: string, secret: string) {
-    const cipher: string[] = [];
+export function encrypt(char: string, secret: string): string {
+    const arr: string[] = [];
 
-    char.split('').forEach(element => {
-        const positionInAlphabet = letterPosition(element, alphabet);
+    char.split('').forEach((element: string) => {
+        const position = letterPosition(element, alphabet);
 
-        cipher.push(secret[positionInAlphabet]);
+        arr.push(secret[position]);
     });
 
-    return cipher.join('');
+    return arr.join('');
 }
 
-export function decrypt(cipher: string, secret: string) {}
+export function decrypt(cipher: string, secret: string): string {
+    const arr: string[] = [];
+
+    cipher.split('').forEach((element: string) => {
+        const position = letterPosition(element, secret);
+
+        arr.push(alphabet[position]);
+    });
+
+    return arr.join('');
+}
