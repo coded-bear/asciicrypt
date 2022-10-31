@@ -1,0 +1,24 @@
+{
+    "name": "alphabet-change",
+    "version": "0.1.0",
+    "description": "Cipher substituting letters of the alphabet",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/coded-bear/alphabet-change.git"
+    },
+    "keywords": [
+        "Alphabet change",
+        "Cipher"
+    ],
+    "author": "Łukasz Warchoł",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/coded-bear/alphabet-change/issues"
+    },
+    "homepage": "https://github.com/coded-bear/alphabet-change#readme"
+}
