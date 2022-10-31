@@ -4,28 +4,24 @@ function letterPosition(char: string, letters: string): number {
     return letters.indexOf(char.toLowerCase());
 }
 
-export function createSecret() {}
-
-export function encrypt(char: string, secret: string): string {
+function helper(char: string, char2: string, char3: string) {
     const arr: string[] = [];
 
     char.split('').forEach((element: string) => {
-        const position = letterPosition(element, alphabet);
+        const position = letterPosition(element, char2);
 
-        arr.push(secret[position]);
+        arr.push(char3[position]);
     });
 
     return arr.join('');
 }
 
-export function decrypt(cipher: string, secret: string): string {
-    const arr: string[] = [];
+export function createSecret() {}
 
-    cipher.split('').forEach((element: string) => {
-        const position = letterPosition(element, secret);
+export function encrypt(char: string, secret: string): string {
+    return helper(char, alphabet, secret);
+}
 
-        arr.push(alphabet[position]);
-    });
-
-    return arr.join('');
+export function decrypt(char: string, secret: string): string {
+    return helper(char, secret, alphabet);
 }
