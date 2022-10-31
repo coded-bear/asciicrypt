@@ -1,0 +1,22 @@
+# Node.js
+
+node_modules
+.npm
+
+# TypeScript build files
+
+dist
+
+# Logs
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac garbage
+.DS_Store
+
+# Windows garbage
+Thumbs.db
