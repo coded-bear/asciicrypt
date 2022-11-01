@@ -16,23 +16,17 @@ export function createSecret() {
 }
 
 export function encrypt(char: string, secret: string): string {
-    const arr: string[] = [];
-
-    char.split('').forEach((element: string) => {
-        arr.push(secret[alphabet.indexOf(element.toLowerCase())]);
-    });
-
-    return arr.join('');
+    return char
+        .split('')
+        .map(element => secret[alphabet.indexOf(element.toLowerCase())])
+        .join('');
 }
 
 export function decrypt(char: string, secret: string): string {
-    const arr: string[] = [];
-
-    char.split('').forEach((element: string) => {
-        arr.push(alphabet[secret.indexOf(element.toLowerCase())]);
-    });
-
-    return arr.join('');
+    return char
+        .split('')
+        .map(element => alphabet[secret.indexOf(element.toLowerCase())])
+        .join('');
 }
 
 export default { createSecret, encrypt, decrypt };
