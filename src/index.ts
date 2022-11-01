@@ -35,4 +35,4 @@ export function decrypt(char: string, secret: string): string {
     return arr.join('');
 }
 
-export default { createSecret };
+export default { createSecret, encrypt, decrypt };
