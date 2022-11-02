@@ -1,7 +1,7 @@
 {
-    "name": "alphabet-change",
+    "name": "asciicrypt",
     "version": "0.1.0",
-    "description": "Cipher substituting letters of the alphabet",
+    "description": "Cipher substituting ascii code characters",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "scripts": {
@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/coded-bear/alphabet-change.git"
+        "url": "git+https://github.com/coded-bear/asciicrypt.git"
     },
     "keywords": [
         "Alphabet change",
@@ -20,9 +20,9 @@
     "author": "Łukasz Warchoł",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/coded-bear/alphabet-change/issues"
+        "url": "https://github.com/coded-bear/asciicrypt/issues"
     },
-    "homepage": "https://github.com/coded-bear/alphabet-change#readme",
+    "homepage": "https://github.com/coded-bear/asciicrypt#readme",
     "devDependencies": {
         "@types/jest": "^29.2.1",
         "@typescript-eslint/eslint-plugin": "^5.42.0",
