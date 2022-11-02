@@ -1,12 +1,12 @@
 import ac from '../src/index';
 
 test('createSecret works correctly', () => {
-    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    const asciiString = String.fromCharCode(...Array.from({ length: 95 }, (_, i) => i + 32));
     const secret = ac.createSecret();
 
     const sortedSecret = secret.split('').sort().join('');
 
-    expect(alphabet === sortedSecret).toBeTruthy();
+    expect(asciiString === sortedSecret).toBeTruthy();
 });
 
 test('encryption works correctly', () => {
