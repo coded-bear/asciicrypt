@@ -6,13 +6,13 @@ Cipher substituting ascii code characters.
 
 The premise was to create a simple cipher that could be decoded by oneself. Without being forced to use a package.
 
-### Installation
+## Installation
 
 ```
 npm install asciicrypt
 ```
 
-### Usage
+## Usage
 
 Generate of secret:
 
@@ -34,6 +34,6 @@ Decryption:
 ac.decrypt(char, secret);
 ```
 
-### License
+## License
 
 Distributed under the MIT License. See LICENSE for more information.
