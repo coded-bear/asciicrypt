@@ -14,8 +14,9 @@
         "url": "git+https://github.com/coded-bear/asciicrypt.git"
     },
     "keywords": [
-        "Alphabet change",
-        "Cipher"
+        "asciicrypt",
+        "ascii",
+        "cipher"
     ],
     "author": "Łukasz Warchoł",
     "license": "MIT",
