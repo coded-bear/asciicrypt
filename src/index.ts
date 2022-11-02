@@ -15,14 +15,14 @@ export function createSecret() {
     return fyShuffle(alphabet.split('')).join('');
 }
 
-export function encrypt(char: string, secret: string): string {
+export function encrypt(char: string, secret: string) {
     return char
         .split('')
         .map(element => secret[alphabet.indexOf(element.toLowerCase())])
         .join('');
 }
 
-export function decrypt(char: string, secret: string): string {
+export function decrypt(char: string, secret: string) {
     return char
         .split('')
         .map(element => alphabet[secret.indexOf(element.toLowerCase())])
