@@ -10,7 +10,8 @@ test('createSecret works correctly', () => {
 });
 
 test('encryption works correctly', () => {
-    const char = 'sausage';
+    const char =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
     const secret = ac.createSecret();
     const encrypted = ac.encrypt(char, secret);
 
@@ -29,10 +30,13 @@ test('encryption works correctly', () => {
 });
 
 test('decryption works correctly', () => {
-    const char = 'sausage';
+    const char =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
     const secret = ac.createSecret();
     const encrypted = ac.encrypt(char, secret);
     const decrypted = ac.decrypt(encrypted, secret);
+
+    console.log({ secret, encrypted, decrypted });
 
     expect(decrypted === char).toBeTruthy();
 });
