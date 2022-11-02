@@ -1,6 +1,6 @@
 {
     "name": "asciicrypt",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Cipher substituting ascii code characters",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
