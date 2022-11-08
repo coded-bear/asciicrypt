@@ -36,7 +36,5 @@ test('decryption works correctly', () => {
     const encrypted = ac.encrypt(char, secret);
     const decrypted = ac.decrypt(encrypted, secret);
 
-    console.log({ secret, encrypted, decrypted });
-
     expect(decrypted === char).toBeTruthy();
 });
